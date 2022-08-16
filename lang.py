@@ -93,7 +93,7 @@ def trigramfreq(word):
     OUTPUTS
     freq, int, number of common combinations found in word
     """
-    trigrams = "./trigrams_freq.txt"
+    trigrams = "./trigrams_freq"
     """
     #code used to create file
     alpherbet = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', \
@@ -112,7 +112,7 @@ def trigramfreq(word):
     trigrams = dict.fromkeys(trigram, 0)
     #search webster dictionary for each combination and compute frequency of occuranceß
     with open(DICT, 'r') as readfile:
-        with open("trigrams_freq.txt", 'w') as writefile:
+        with open("trigrams_freq", 'w') as writefile:
             len = 0
             for word in readfile:
                 len += 1
